@@ -6,3 +6,6 @@
 /snapshot.bin
 /*.jor
 /detlog.txt
+
+*.vcxproj
+*.vcxproj.filters
