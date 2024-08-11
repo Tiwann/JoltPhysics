@@ -5,10 +5,12 @@
     staticruntime "On"
     flags "MultiProcessorCompile"
     
+    location(build)
     targetdir(binaries)
     objdir(intermediate)
     	
     files {
+        "Jolt.lua",
         "Jolt/Jolt.natvis",
         "Jolt/AABBTree/AABBTreeBuilder.cpp",
         "Jolt/AABBTree/AABBTreeBuilder.h",
@@ -451,7 +453,7 @@
     }
     
     includedirs {
-        "%{prj.location}"
+        "%{libs.Jolt}"
     }
     
     
